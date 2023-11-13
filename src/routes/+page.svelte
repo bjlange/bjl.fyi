@@ -25,7 +25,7 @@
 			Previously I've worked at IDEO and Datascope, building data science teams and solving problems
 			for clients using data, algorithms, and human-centered design.
 		</p>
-		<div id="iconRow">
+		<div id="iconRow" style='margin-left:-2px'>
 			<a href="https://www.linkedin.com/in/brianjlange/" target="_blank" rel="noopener noreferrer">
 				<Icon
 					icon={linkedinIcon}
