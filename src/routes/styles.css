@@ -1,17 +1,52 @@
-@import '@fontsource/fira-mono';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Inter+Tight:wght@600&display=swap');
 
 :root {
-	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+	--font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	--font-mono: 'Fira Mono', monospace;
-	--color-bg-0: rgb(202, 216, 228);
-	--color-bg-1: hsl(209, 36%, 86%);
-	--color-bg-2: hsl(224, 44%, 95%);
-	--color-theme-1: #ff3e00;
-	--color-theme-2: #4075a6;
-	--color-text: rgba(0, 0, 0, 0.7);
-	--column-width: 42rem;
-	--column-margin-top: 4rem;
+	--color-light-gray: #EDEFF2;
+	--color-blue-900: #050045;
+	--color-blue-800: #080083;
+	--color-blue-700: #0E07B0;
+	--color-blue-main: #1F22D2;
+	--color-blue-500: #405DDC;
+	--color-blue-400: #6290E5;
+	--color-blue-300: #85BBED;
+	--color-blue-200: #A9DCF4;
+	--color-blue-100: #CFF3FA;
+	--color-orange-accent: #D15A1F;
+
+	/* Utopia Type Scale */
+	/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+	/* Step -2: 12.50px → 12.80px */
+	--step--2: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
+
+	/* Step -1: 15.00px → 16.00px */
+	--step--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+	
+	/* Step 0: 18.00px → 20.00px */
+	--step-0: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+	
+	/* Step 1: 21.60px → 25.00px */
+	--step-1: clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5625rem);
+	
+	/* Step 2: 25.92px → 31.25px */
+	--step-2: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
+	
+	/* Step 3: 31.10px → 39.06px */
+	--step-3: clamp(1.9438rem, 1.7707rem + 0.8652vw, 2.4413rem);
+	
+	/* Step 4: 37.32px → 48.83px */
+	--step-4: clamp(2.3325rem, 2.0823rem + 1.2511vw, 3.0519rem);
+	
+	/* Step 5: 44.79px → 61.04px */
+	--step-5: clamp(2.7994rem, 2.4461rem + 1.7663vw, 3.815rem);
+	
+	/* Step 6: 53.75px → 76.29px */
+	--step-6: clamp(3.3594rem, 2.8694rem + 2.45vw, 4.7681rem);
+
+
+
+	--color-text: var(--color-blue-900);
 	font-family: var(--font-body);
 	color: var(--color-text);
 }
@@ -20,20 +55,7 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	background-attachment: fixed;
-	background-color: var(--color-bg-1);
-	background-size: 100vw 100vh;
-	background-image: radial-gradient(
-			50% 50% at 50% 50%,
-			rgba(255, 255, 255, 0.75) 0%,
-			rgba(255, 255, 255, 0) 100%
-		),
-		linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
-}
-
-h1,
-h2,
-p {
-	font-weight: 400;
+	background-color: var(--color-light-gray);
 }
 
 p {
@@ -50,49 +72,20 @@ a:hover {
 }
 
 h1 {
-	font-size: 2rem;
-	text-align: center;
+	font-size: var(--step-6);
+	text-align: left;
+	color: var(--color-blue-main);
+	font-weight: 600;
+	font-family: 'Inter Tight', sans-serif;
 }
 
 h2 {
-	font-size: 1rem;
+	font-size: var(--step-5);
+	color: var(--color-blue-500);
 }
 
-pre {
-	font-size: 16px;
-	font-family: var(--font-mono);
-	background-color: rgba(255, 255, 255, 0.45);
-	border-radius: 3px;
-	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-	padding: 0.5em;
-	overflow-x: auto;
-	color: var(--color-text);
-}
 
-.text-column {
-	display: flex;
-	max-width: 48rem;
-	flex: 0.6;
-	flex-direction: column;
-	justify-content: center;
-	margin: 0 auto;
-}
 
-input,
-button {
-	font-size: inherit;
-	font-family: inherit;
-}
-
-button:focus:not(:focus-visible) {
-	outline: none;
-}
-
-@media (min-width: 720px) {
-	h1 {
-		font-size: 2.4rem;
-	}
-}
 
 .visually-hidden {
 	border: 0;

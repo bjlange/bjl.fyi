@@ -1,7 +1,12 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import headshot from '$lib/images/headshot.jpg';
+	import underConstruction from '$lib/images/UnderConstruction.gif';
+	import Icon from '@iconify/svelte';
+	import linkedinIcon from '@iconify/icons-mdi/linkedin';
+	import instagramIcon from '@iconify/icons-mdi/instagram';
+	import githubIcon from '@iconify/icons-mdi/github';
+
+	const iconSize = 30;
 </script>
 
 <svelte:head>
@@ -9,51 +14,73 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
+<section id="nameplate" class="flex flex-row flex-wrap justify-center gap-8 mx-8 my-40">
+	<img src={headshot} class="rounded-full w-52 h-52" alt="A headshot of Brian J Lange" />
+	<div class="max-w-prose flex-grow">
+		<div id="hello">Hey there! I'm</div>
+		<h1>Brian J. Lange.</h1>
+		<h2>I'm a data scientist, designer, and leader of creative problem solvers.</h2>
+		<p>I'm also a bike rider, Chicagoan, and enjoyer of nature, music, and good food and drink.</p>
+		<p>
+			Previously I've worked at IDEO and Datascope, building data science teams and solving problems
+			for clients using data, algorithms, and human-centered design.
+		</p>
+		<div id="iconRow">
+			<a href="https://www.linkedin.com/in/brianjlange/" target="_blank" rel="noopener noreferrer">
+				<Icon
+					icon={linkedinIcon}
+					width={iconSize}
+					height={iconSize}
+					style="display: inline-block;"
+				/>
+			</a>
+			<a href="https://www.instagram.com/bjlange/" target="_blank" rel="noopener noreferrer">
+				<Icon
+					icon={instagramIcon}
+					width={iconSize}
+					height={iconSize}
+					style="display: inline-block;"
+				/>
+			</a>
+			<a href="https://github.com/bjlange/" target="_blank" rel="noopener noreferrer">
+				<Icon icon={githubIcon} width={iconSize} height={iconSize} style="display: inline-block;" />
+			</a>
+		</div>
+	</div>
+</section>
+<section class="my-96">
+	<div class="text-center">
+		<img
+			src={underConstruction}
+			class="mx-auto"
+			alt="A 90's style banner that says 'Under Constrution"
+		/>
+		project portfolio and other writings coming soon...
+	</div>
 </section>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
+	#nameplate {
+		font-weight: 300;
+		line-height: 1.2em;
 
-	h1 {
-		width: 100%;
+		& h1 {
+			font-size: var(--step-5);
+			font-family: 'Inter Tight', 'Inter', sans-serif;
+			line-height: 1.2em;
+		}
 	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+	h2 {
+		font-size: var(--step-3);
+		margin-bottom: 1rem;
+		line-height: 1.2em;
 	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+	p {
+		font-size: var(--step-1);
+		margin-bottom: 1rem;
+	}
+	#hello {
+		font-size: var(--step-1);
+		line-height: 1.2em;
 	}
 </style>
