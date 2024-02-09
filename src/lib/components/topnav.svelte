@@ -7,7 +7,7 @@
 	<a href="/">
 		<div id="site-title-block" class="p-3 pb-3 flex flex-row items-baseline gap-x-2 gap-y-1 flex-wrap justify-center">
 			<span id="fyi" class="font-junicode ">for your information</span>
-			<Icon icon={informationIcon} height=32 class="basis-full md:basis-8 relative inline-block md:top-2 top-0"  style="color: var(--color-blue-900);"/>
+			<Icon icon={informationIcon} height=32 class="basis-full sm:basis-8 relative inline-block sm:top-2 top-0"  style="color: var(--color-blue-900);"/>
 			<span id="hyper">the hypertext pages of Brian J. Lange</span>
 		</div>
 	</a>

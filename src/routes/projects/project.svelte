@@ -5,14 +5,21 @@
 </script>
 
 <TopNav />
-<article class="max-w-5xl mx-auto px-2 mt-4">
-	<h1>{title}</h1>
-
-	<slot />
+<article class="max-w-4xl mx-auto mt-4">
+	<div id="shift">
+		<h1>{title}</h1>
+		<slot />
+	</div>
 </article>
 
 <style>
 	article {
 		font-size: var(--step-0);
+	}
+	@media (min-width: 640px) {
+        #shift {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
 	}
 </style>

@@ -4,14 +4,14 @@ date: '2023-12-25'
 ---
 
 <script>
-import "../project.css";
 import img from '$lib/images/players_handbook_cover.png'
 import pdf from '$lib/documents/datascope-Capital1_DataGames_Case_Study.pdf'
 import DocLinkIcon from '@iconify/icons-fluent/document-link-16-regular'
 import IconButton from '$lib/components/iconbutton.svelte'
 </script>
 
-<img class="mb-2 md:ml-8 md:w-96 md:float-right" src={img} alt='A cover of a "players handbook" for the Data Games, in the style of a vintage Dungeons and Dragons guide' />
+<img class="mb-2 sm:-mr-8 sm:ml-8 sm:w-96 sm:float-right" src={img} alt='A cover of a "players handbook" for the Data Games, in the style of a vintage Dungeons and Dragons guide' />
+
 
 I worked on a team at Datascope that helped design and run an educational data modeling competition for CapitalOne. Like a cross between a Kaggle competition and a hackathon, each team had their own server which had to classify incoming "transactions" throughout the competition. This continuous-scoring design incentivized teams to iterate and make easy, pragmatic improvements to their algorithm early while maintaining system stability and going deep on the data and models to gain an edge over the other teams as time went on. All while we blasted epic movie music and projected real time scores on the wall. It was great fun!
 
