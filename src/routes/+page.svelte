@@ -77,7 +77,6 @@
 	}
 	p {
 		font-size: var(--step-1);
-		margin-bottom: 1rem;
 	}
 	#hello {
 		font-size: var(--step-1);

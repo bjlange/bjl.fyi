@@ -1,7 +1,7 @@
 <script>
 	import "../app.css";
 	import './styles.css';
-
+	import '@fontsource-variable/inter/slnt.css';
 </script>
 
 <div class="app">
@@ -12,4 +12,7 @@
 </div>
 
 <style>
+	p {
+		margin-bottom: 1rem;
+	}
 </style>

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Inter+Tight:wght@600&display=swap');
-
 :root {
-	--font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+	--font-body: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--color-light-gray: #EDEFF2;
+	--color-shadow-gray: #DFE1E4;
+	--color-mid-gray: #AAA9AD;
 	--color-blue-900: #050045;
 	--color-blue-800: #080083;
 	--color-blue-700: #0E07B0;
@@ -60,6 +60,7 @@ body {
 
 p {
 	line-height: 1.5;
+	margin-bottom: 1rem;
 }
 
 a {
