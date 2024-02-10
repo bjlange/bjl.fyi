@@ -44,7 +44,7 @@ Three weeks into the six week pilot, after trying tons of different tactics, we 
 
 
 
-I immediately started working on an algorithm for carpool buddy matching that worked similar to Uber Pool- in essence, minimizing added trip time for drivers, rather than just using geographic proximity by taking into account who was "on the way" for each employee. I collaborated with a designer and mobile dev to work it into the app as well as giant printed posters for our pilot partner's workspace, and within 7 working days we had new carpool features in the app and in the office.
+I immediately started working on an algorithm for carpool buddy matching that worked similar to Uber Pool- in essence, minimizing added trip time for drivers by taking into account who was "on the way" for each employee. I collaborated with a designer and mobile dev to work it into the app as well as giant printed posters for our pilot partner's workspace, and within 7 working days we had new carpool features in the app and in the office.
 
 ## The results
 
