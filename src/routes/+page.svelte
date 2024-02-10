@@ -5,6 +5,8 @@
 	import linkedinIcon from '@iconify/icons-mdi/linkedin';
 	import instagramIcon from '@iconify/icons-mdi/instagram';
 	import githubIcon from '@iconify/icons-mdi/github';
+	import PortfolioGrid from '../lib/components/portfoliogrid.svelte';
+	export let data;
 
 	const iconSize = 30;
 </script>
@@ -48,16 +50,11 @@
 		</div>
 	</div>
 </section>
-<section class="my-96">
-	<div class="text-center">
-		<img
-			src={underConstruction}
-			class="mx-auto"
-			alt="A 90's style banner that says 'Under Constrution"
-		/>
-		project portfolio and other writings coming soon...
-	</div>
+<section class="flex flex-row justify-center">
+	<PortfolioGrid content={data.content} />
 </section>
+
+
 
 <style>
 	#nameplate {
