@@ -1,6 +1,7 @@
 ---
 title: Data Games
-date: '2023-12-25'
+date: '2017-05-01'
+tags: [experience design, data capability building, full stack web dev, facilitation]
 ---
 
 <script>

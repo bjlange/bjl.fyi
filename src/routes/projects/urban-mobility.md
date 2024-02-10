@@ -1,6 +1,7 @@
 ---
 title: "Urban Mobility Venture Pilot"
-date: '2023-12-25'
+date: '2018-03-14'
+tags: [analytics, ml features, live product, geospatial, behavior change]
 ---
 
 <script>
