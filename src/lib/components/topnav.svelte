@@ -29,4 +29,11 @@
     #site-title-block {
         border-bottom: 1px solid var(--color-orange-accent);
     }
+	a {
+		transition: all .3s ease-in;
+	}
+	a:hover {
+		text-decoration: none;
+		color: var(--color-blue-main);
+	}
 </style>

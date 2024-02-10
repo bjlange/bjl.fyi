@@ -5,9 +5,9 @@
 </script>
 
 <TopNav />
-<article class="max-w-4xl mx-auto mt-4">
+<article class="max-w-prose mx-2 sm:mx-auto mt-4 mb-12">
 	<div id="shift">
-		<h1>{title}</h1>
+		<h1 class="mt-10 mb-8">{title}</h1>
 		<slot />
 	</div>
 </article>
