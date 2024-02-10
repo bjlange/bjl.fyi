@@ -50,7 +50,7 @@
 		</div>
 	</div>
 </section>
-<section class="flex flex-row justify-center">
+<section class="flex flex-row mx-8 justify-center">
 	<PortfolioGrid content={data.content} />
 </section>
 
