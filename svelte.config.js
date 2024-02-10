@@ -16,9 +16,6 @@ const config = {
 		vitePreprocess(),
 		mdsvex({
 			extensions: ['.md'],
-			layout: {
-				projects: 'src/routes/projects/project.svelte'
-			},
 			remarkPlugins: [remarkGfm],
 		}),
 	]

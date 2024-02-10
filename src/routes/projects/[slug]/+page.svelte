@@ -1,14 +1,13 @@
 <script>
-	export let title;
-	export let date;
+	export let data;
     import TopNav from '$lib/components/topnav.svelte'
 </script>
 
 <TopNav />
 <article class="max-w-prose mx-2 sm:mx-auto mt-4 mb-12">
 	<div id="shift">
-		<h1 class="mt-10 mb-8">{title}</h1>
-		<slot />
+		<h1 class="mt-10 mb-8">{data.title}</h1>
+		<svelte:component this={data.content} />
 	</div>
 </article>
 
