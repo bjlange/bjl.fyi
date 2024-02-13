@@ -2,6 +2,8 @@
 title: "Urban Mobility Venture Pilot"
 date: '2018-03-14'
 tags: [analytics, ml features, live product, geospatial, behavior change]
+cardImg: redacted_carpool_screenshot
+cardImgPosition: top
 ---
 
 <script>

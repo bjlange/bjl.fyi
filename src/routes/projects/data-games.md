@@ -2,6 +2,8 @@
 title: Data Games
 date: '2017-05-01'
 tags: [experience design, data capability building, full stack web dev, facilitation]
+cardImg: 'players_handbook_cover'
+cardImgPosition: bottom
 ---
 
 <script>

@@ -73,7 +73,7 @@ a:hover {
 }
 
 h1 {
-	font-size: var(--step-6);
+	font-size: var(--step-5);
 	text-align: left;
 	color: var(--color-blue-main);
 	font-weight: 600;
@@ -81,8 +81,12 @@ h1 {
 }
 
 h2 {
-	font-size: var(--step-5);
+	font-size: var(--step-3);
 	color: var(--color-blue-500);
+}
+
+h3 {
+	font-size: var(--step-2);
 }
 
 h1, h2, h3, h4, h5, h6{

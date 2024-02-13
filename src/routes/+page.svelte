@@ -16,7 +16,7 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section id="nameplate" class="flex flex-row flex-wrap justify-center gap-8 mx-8 my-40">
+<section id="nameplate" class="flex flex-row flex-wrap justify-center gap-8 mx-8 my-36">
 	<img src={headshot} class="rounded-full w-52 h-52" alt="A headshot of Brian J Lange" />
 	<div class="max-w-prose flex-grow">
 		<div id="hello">Hey there! I'm</div>
@@ -50,7 +50,7 @@
 		</div>
 	</div>
 </section>
-<section class="flex flex-row mx-8 justify-center">
+<section class="flex flex-row justify-center mx-auto">
 	<PortfolioGrid content={data.content} />
 </section>
 
