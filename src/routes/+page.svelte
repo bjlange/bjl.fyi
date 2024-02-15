@@ -1,6 +1,6 @@
 <script>
-	import headshot from '$lib/images/headshot.jpg';
-	import underConstruction from '$lib/images/UnderConstruction.gif';
+	import headshot from '$lib/images/headshot.jpg?as=run';
+	import Img from '@zerodevx/svelte-img'
 	import Icon from '@iconify/svelte';
 	import linkedinIcon from '@iconify/icons-mdi/linkedin';
 	import instagramIcon from '@iconify/icons-mdi/instagram';
@@ -13,7 +13,7 @@
 
 
 <section id="nameplate" class="flex flex-row flex-wrap justify-center gap-8 mx-8 my-36">
-	<img src={headshot} class="rounded-full w-52 h-52" alt="A headshot of Brian J Lange" />
+	<Img src={headshot} class="rounded-full w-52 h-52" alt="A headshot of Brian J Lange" />
 	<div class="max-w-prose flex-grow">
 		<div id="hello">Hey there! I'm</div>
 		<h1>Brian J. Lange.</h1>
