@@ -2,9 +2,9 @@ export const load = async ({ fetch }) => {
 	const response = await fetch(`/api/content`);
 	const content = await response.json();
 
-	const title = 'Brian J. Lange';
+	const title = 'Brian J. Lange | Data x Product Leader';
 	const description =
-		'Data scientist, product person, and leader of creative problem solvers. Formerly of IDEO and Datascope.';
+		'The hypertext pages of the Chicago-based data scientist, product person, and leader of creative problem solvers. Formerly of IDEO and Datascope.';
 	const pageMetaTags = {
 		title: title,
 		titleTemplate: '%s',
