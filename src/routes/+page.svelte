@@ -7,14 +7,10 @@
 	import githubIcon from '@iconify/icons-mdi/github';
 	import PortfolioGrid from '../lib/components/portfoliogrid.svelte';
 	export let data;
-
 	const iconSize = 30;
+
 </script>
 
-<svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head>
 
 <section id="nameplate" class="flex flex-row flex-wrap justify-center gap-8 mx-8 my-36">
 	<img src={headshot} class="rounded-full w-52 h-52" alt="A headshot of Brian J Lange" />
@@ -27,7 +23,7 @@
 			Previously I've worked at IDEO and Datascope, building data science teams and solving problems
 			for clients using data, algorithms, and human-centered design.
 		</p>
-		<div id="iconRow" style='margin-left:-2px'>
+		<div id="iconRow" style="margin-left:-2px">
 			<a href="https://www.linkedin.com/in/brianjlange/" target="_blank" rel="noopener noreferrer">
 				<Icon
 					icon={linkedinIcon}
@@ -35,7 +31,8 @@
 					height={iconSize}
 					style="display: inline-block;"
 				/>
-				<span class="sr-only">LinkedIn</span> <!-- This is for screen readers -->
+				<span class="sr-only">LinkedIn</span>
+				<!-- This is for screen readers -->
 			</a>
 			<a href="https://www.instagram.com/bjlange/" target="_blank" rel="noopener noreferrer">
 				<Icon
@@ -44,11 +41,13 @@
 					height={iconSize}
 					style="display: inline-block;"
 				/>
-				<span class="sr-only">Instagram</span> <!-- This is for screen readers -->
+				<span class="sr-only">Instagram</span>
+				<!-- This is for screen readers -->
 			</a>
 			<a href="https://github.com/bjlange/" target="_blank" rel="noopener noreferrer">
 				<Icon icon={githubIcon} width={iconSize} height={iconSize} style="display: inline-block;" />
-				<span class="sr-only">GitHub</span> <!-- This is for screen readers -->
+				<span class="sr-only">GitHub</span>
+				<!-- This is for screen readers -->
 			</a>
 		</div>
 	</div>
@@ -56,8 +55,6 @@
 <section class="flex flex-row justify-center mx-auto">
 	<PortfolioGrid content={data.content} />
 </section>
-
-
 
 <style>
 	#nameplate {
