@@ -7,9 +7,8 @@
         const img = piece.meta.cardImg;
 
         if (img) {
-            const module = await import(`$lib/images/${img}.png`);
+            const module = await import(`$lib/images/${img}.png?format=webp`);
             cardImg = module.default;
-            console.log('hello!', module, `$lib/images/${img}.png`)
         }
     });
 </script>
