@@ -21,7 +21,7 @@
 	<div class="max-w-prose flex-grow">
 		<div id="hello">Hey there! I'm</div>
 		<h1>Brian J. Lange.</h1>
-		<h2>I'm a data scientist, designer, and leader of creative problem solvers.</h2>
+		<h2>I'm a data scientist, product person, and leader of creative problem solvers.</h2>
 		<p>I'm also a bike rider, Chicagoan, and enjoyer of nature, music, and good food and drink.</p>
 		<p>
 			Previously I've worked at IDEO and Datascope, building data science teams and solving problems
@@ -35,6 +35,7 @@
 					height={iconSize}
 					style="display: inline-block;"
 				/>
+				<span class="sr-only">LinkedIn</span> <!-- This is for screen readers -->
 			</a>
 			<a href="https://www.instagram.com/bjlange/" target="_blank" rel="noopener noreferrer">
 				<Icon
@@ -43,9 +44,11 @@
 					height={iconSize}
 					style="display: inline-block;"
 				/>
+				<span class="sr-only">Instagram</span> <!-- This is for screen readers -->
 			</a>
 			<a href="https://github.com/bjlange/" target="_blank" rel="noopener noreferrer">
 				<Icon icon={githubIcon} width={iconSize} height={iconSize} style="display: inline-block;" />
+				<span class="sr-only">GitHub</span> <!-- This is for screen readers -->
 			</a>
 		</div>
 	</div>
@@ -78,5 +81,10 @@
 	#hello {
 		font-size: var(--step-1);
 		line-height: 1.2em;
+	}
+	#iconRow {
+		& a {
+			text-decoration: none;
+		}
 	}
 </style>
