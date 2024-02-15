@@ -13,6 +13,12 @@
             <div class="filler">
                 More being added soon...
             </div>
+        {:else if content.length % 3 === 1}
+        <div class="filler">
+            More being added soon...
+        </div>   
+        <div class="filler">
+        </div>   
         {/if}
 	</div>
 </div>
@@ -23,5 +29,8 @@
         min-width: 220px;
         max-width: 700px;
         flex-grow: 1;
+        color: var(--color-mid-gray);
+        font-size: var(--step-2);
+        padding: 1rem;
     }
 </style>
