@@ -17,7 +17,7 @@ import commutes from '$lib/images/commutes.gif';
 
 At IDEO, I joined a team in an urban mobility focused venture studio which was just about to pilot their product with a 150-person Bay Area company. The product was designed to shift commuter behavior from single-driver, single-car commutes to any alternative (transit, bike/scooter, carpool, or multimodal), which we called "smart commutes".  
 
-<img src={commutes} class="float-right sm:w-96 sm:ml-8 sm:-mr-16">
+<img src={commutes} alt='An animation showing anonymous commuter GPS data from the app pilot.' class="float-right sm:w-96 sm:ml-8 sm:-mr-16">
 
 Business wise, the idea was that employers would be interested in reducing their parking requirements and improving the wellbeing, retention, and performance of their workforce (which multiple studies show long commutes affect negatively), and if the product could do that while also appearing to employees as a valuable benefit, it would be a win-win.
 
@@ -25,8 +25,8 @@ Business wise, the idea was that employers would be interested in reducing their
 One of the core functionalities of the product was to provide incentive rewards for taking "smart" commutes, and we decided that ideally the app could identify when these happened on its own, to make things easier for users as well as cut down on fraud.  So we built a transportation mode classifier that would work on GPS track data. I helped with feature engineering and pulling in third party data to improve the performance of the algorithm, as well as an admin dashboard for viewing and editing training data and model outputs.
 
 <div class="mb-4 sm:float-left sm:mb-8 sm:mr-8 sm:-ml-16 relative">
-    <img class="sm:w-64" src={dash} alt='' />
-    <img id="analytics-map" class="sm:w-96 absolute bottom-0 sm:-bottom-4 sm:right-2" src={stack} alt='' />
+    <img class="sm:w-64" src={dash} alt='Television in the client workspace with live app metric graphs on it' />
+    <img id="analytics-map" class="sm:w-96 absolute bottom-0 sm:-bottom-4 sm:right-2" src={stack} alt='Systems diagram showing the connections between many data systems which made up the analytics stack for the venture' />
 </div>
 
 ## Analytics
@@ -38,9 +38,9 @@ This would pay off during the pilot as it allowed every member of the team to se
 ## The pilot pivot
 Three weeks into the six week pilot, after trying tons of different tactics, we weren't satisfied with the change were were seeing from the baseline numbers we collected in the 2 weeks before we began the program. I did some analysis using address data and routing APIs which suggested the transit infrastructure barrier was just too high to overcome: only 18% of driving users had what we deemed a viable transit alternative. After seeing this, the leader of the project decided to pivot to focus hard on carpool. This was a departure from the transit focus the app initially had. 
 
-<img class="w-48 sm:float-right sm:ml-16 relative top-10 z-10 left-4 sm:right-10" src={net} alt='' />
-<img class="sm:w-96 sm:float-right clear-right sm:ml-8 my-4 relative sm:-mr-16" src={poster} alt='' />
-<img class="w-72 sm:float-right clear-right sm:ml-8 left-32 sm:left-0 relative -top-32 sm:-top-16 -mb-24 sm:-mb-12 "  src={app} alt='' />
+<img class="w-48 sm:float-right sm:ml-16 relative top-10 z-10 left-4 sm:right-10" src={net} alt='Diagram of a small travel time network from one of the early carpool prototypes' />
+<img class="sm:w-96 sm:float-right clear-right sm:ml-8 my-4 relative sm:-mr-16" src={poster} alt='Large posters in the pilot partners workspace with carpool buddy matches' />
+<img class="w-72 sm:float-right clear-right sm:ml-8 left-32 sm:left-0 relative -top-32 sm:-top-16 -mb-24 sm:-mb-12 "  src={app} alt='Screenshot of the carpool buddy feature in the app' />
     
     
     
