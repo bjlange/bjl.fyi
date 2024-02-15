@@ -16,3 +16,16 @@ export const fetchMarkdownPosts = async () => {
 
 	return allPosts;
 };
+
+export const allProjectSlugs = async () => {
+    const allPostFiles = import.meta.glob('/src/routes/projects/*.md');
+	const iterablePostFiles = Object.entries(allPostFiles);
+
+	const allSlugs = await Promise.all(
+        iterablePostFiles.map(async ([path, resolver]) => {
+            const postSlug = path.slice(21, -3);
+            return postSlug;
+        })
+    );
+    return allSlugs
+};
