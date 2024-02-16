@@ -19,7 +19,7 @@ import illus from '$lib/images/sparck-illustration.png?as=run'
 
 IssueLab is the knowledge platform for Candid, formerly known as the Foundation Center. Their goal is to collect, archive, and make accessible and useful "gray literature"— things like white papers, research reports, evaluations, and case studies. Most of the social sector produces and releases knowledge this way, but the sector lacks the formal channels and aggregators that academia has to make this content searchable, so that's where IssueLab fits in.
 
-<Img src={illus} class="my-8" />
+<Img alt='An illustration of a robot organizing a pile of papers into a well organized bookshelf' src={illus} class="my-8" />
 
 I worked on a team that built an API which uses natural language processing to help IssueLab add richer metadata to their collection for improved search results and exploration features. The API, called Sparck, accepts PDFs and processes them to produce keywords, key finding statements, and topics. It's named for Karen Spärck Jones, a British pioneer in information retrieval.
 
@@ -28,7 +28,7 @@ On the backend it uses traditional NLP techniques like TF-IDF, as well as a nove
 Because of the long processing time to extract plain text from PDFs, the system works asynchronously using a job queue (implemented using Redis and [RQ](https://python-rq.org/)) and provides APIs and dashboards for the client to check on the status of documents and retrieve results.
 
 <figure class="my-8">
-<Img src={ss} />
+<Img alt='A screenshot of the Sparck API documentation with an explainer called "Inside the Machine"' src={ss} />
 <figcaption>The documentation + API explorer site I designed and developed</figcaption>
 </figure>
 

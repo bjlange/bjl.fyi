@@ -10,6 +10,9 @@ export const GET = async () => {
 
 	return await sitemap.response({
 		origin: 'https://bjl.fyi',
+        excludePatterns: [
+            '^/projects$'
+        ],
         paramValues: {
             '/projects/[slug]': projectSlugs
         }
