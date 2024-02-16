@@ -3,14 +3,19 @@ export async function load({ params }) {
 	const { title, date, description } = post.metadata;
 	const content = post.default;
 
+	const edited =
+		'Read about ' +
+		description.charAt(0).toLowerCase() +
+		description.slice(1) +
+		" on Brian J. Lange's portfolio site.";
 
 	const pageMetaTags = {
 		title: title,
-		description: description,
+		description: edited,
 		openGraph: {
 			title: title,
-			description: description,
-			siteName: 'Brian J. Lange',
+			description: edited,
+			siteName: 'Brian J. Lange'
 		}
 	};
 
