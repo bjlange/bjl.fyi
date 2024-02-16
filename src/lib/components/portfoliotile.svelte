@@ -54,6 +54,7 @@
 		transition: box-shadow 0.3s ease-in-out 0s;
         background-color: var(--color-blue-main);
         background-blend-mode: soft-light;
+        background-repeat: no-repeat;
 	}
 	.tile:hover {
 		box-shadow: 0px 0px 25px 6px var(--color-blue-400);

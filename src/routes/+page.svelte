@@ -62,8 +62,6 @@
 		line-height: 1.2em;
 
 		& h1 {
-			font-size: var(--step-5);
-			font-family: 'Inter Tight', 'Inter', sans-serif;
 			line-height: 1.2em;
 		}
 	}
