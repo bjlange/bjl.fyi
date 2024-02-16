@@ -12,6 +12,7 @@ import Img from '@zerodevx/svelte-img'
 import dash from '$lib/images/mobility_dashboard.png?as=run';
 import stack from '$lib/images/analytics_stack.png?as=run';
 import net from '$lib/images/commute_network.png?as=run';
+
 import app from '$lib/images/redacted_carpool_screenshot.png?as=run:0';
 import poster from '$lib/images/posters.png?as=run';
 import commutes from '$lib/images/commutes.gif';
@@ -41,6 +42,7 @@ This would pay off during the pilot as it allowed every member of the team to se
 ## The pilot pivot
 
 Three weeks into the six week pilot, after trying tons of different tactics, we weren't satisfied with the change were were seeing from the baseline numbers we collected in the 2 weeks before we began the program. I did some analysis using address data and routing APIs which suggested the transit infrastructure barrier was just too high to overcome: only 18% of driving users had what we deemed a viable transit alternative. After seeing this, the leader of the project decided to pivot to focus hard on carpool. This was a departure from the transit focus the app initially had.
+
 
 <Img class="w-48 sm:float-right sm:ml-16 relative top-10 z-10 left-4 sm:right-10" src={net} alt='Diagram of a small travel time network from one of the early carpool prototypes' />
 <Img class="sm:w-96 sm:float-right clear-right sm:ml-8 my-4 relative sm:-mr-16" src={poster} alt='Large posters in the pilot partners workspace with carpool buddy matches' />
