@@ -42,7 +42,7 @@
 		text-decoration: none;
 	}
     .tilelink {
-        flex-basis: 430px;
+        flex-basis: 337px;
         min-width: 220px;
         max-width: 700px;
         flex-grow: 1;
