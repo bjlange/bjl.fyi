@@ -22,7 +22,7 @@
         {#if piece.meta.tags}
             <div>
                 {#each piece.meta.tags as tag}
-                    <span class="tagpill text-white text-xs rounded px-2 py-1 mr-1 inline-block">
+                    <span class="tagpill text-white text-xs rounded px-2 py-0.5 mr-1 inline-block">
                         {tag}
                     </span>
                 {/each}
