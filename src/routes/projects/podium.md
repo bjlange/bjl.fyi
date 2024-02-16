@@ -1,7 +1,7 @@
 ---
 title: Podium
 date: '2012-01-01'
-tags: [enterepreneurship, product, full stack web dev, AWS]
+tags: [enterepreneurship, live product, full stack web dev, AWS]
 description: A web video platform that helped professionals get feedback on important presentations
 cardImg: podium3
 

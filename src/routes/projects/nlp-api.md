@@ -1,7 +1,7 @@
 ---
 title: Sparck NLP API
 date: '2017-05-01'
-tags: [information retrieval, API backends, elasticsearch, documentation design, production code]
+tags: [information retrieval, API backends, elasticsearch, documentation design, live product]
 description: Improving the discovery of social sector gray literature using NLP
 cardImg: sparck-illustration
 ---
