@@ -15,7 +15,7 @@ import net from '$lib/images/commute_network.png?as=run';
 
 import app from '$lib/images/redacted_carpool_screenshot.png?as=run:0';
 import poster from '$lib/images/posters.png?as=run';
-import commutes from '$lib/images/commutes.gif';
+import commutes from '$lib/images/commutes.webp';
 </script>
 
 At IDEO, I joined a team in an urban mobility focused venture studio which was just about to pilot their product with a 150-person Bay Area company. The product was designed to shift commuter behavior from single-driver, single-car commutes to any alternative (transit, bike/scooter, carpool, or multimodal), which we called "smart commutes".
