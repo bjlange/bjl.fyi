@@ -23,7 +23,7 @@ IssueLab is the knowledge platform for Candid, formerly known as the Foundation 
 
 I worked on a team that built an API which uses natural language processing to help IssueLab add richer metadata to their collection for improved search results and exploration features. The API, called Sparck, accepts PDFs and processes them to produce keywords, key finding statements, and topics. It's named for Karen Spärck Jones, a British pioneer in information retrieval.
 
-On the backend it uses traditional NLP techniques like tf-IDF, as well as a novel technique we developed called WikiTopic. WikiTopic uses an ElasticSearch index of the Wikipedia corpus to produce relevant named topics for documents. (Keep in mind this was years before the development of large language models.)
+On the backend it uses traditional NLP techniques like TF-IDF, as well as a novel technique we developed called WikiTopic. WikiTopic uses an ElasticSearch index of the Wikipedia corpus to produce relevant named topics for documents. (Keep in mind this was years before the development of large language models.)
 
 Because of the long processing time to extract plain text from PDFs, the system works asynchronously using a job queue (implemented using Redis and [RQ](https://python-rq.org/)) and provides APIs and dashboards for the client to check on the status of documents and retrieve results.
 
