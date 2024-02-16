@@ -52,7 +52,7 @@
 		</div>
 	</div>
 </section>
-<section class="flex flex-row justify-center mx-auto">
+<section class="flex flex-row justify-center mx-auto mb-32">
 	<PortfolioGrid content={data.content} />
 </section>
 

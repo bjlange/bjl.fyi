@@ -1,6 +1,7 @@
 <script>
 	export let data;
     import TopNav from '$lib/components/topnav.svelte'
+	import './projects.css';
 </script>
 
 <TopNav />

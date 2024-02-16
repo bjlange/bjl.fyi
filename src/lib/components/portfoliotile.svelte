@@ -22,7 +22,7 @@
         {#if piece.meta.tags}
             <div>
                 {#each piece.meta.tags as tag}
-                    <span class="tagpill text-white text-xs rounded px-2 mr-1 inline-block">
+                    <span class="tagpill text-white text-xs rounded px-2 py-1 mr-1 inline-block">
                         {tag}
                     </span>
                 {/each}
@@ -48,7 +48,7 @@
         flex-grow: 1;
     }
     .tagpill {
-        background-color: var(--color-blue-400);
+        background-color: var(--color-blue-700);
     }
 	.tile {
 		transition: box-shadow 0.3s ease-in-out 0s;
