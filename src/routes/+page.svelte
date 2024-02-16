@@ -52,7 +52,7 @@
 		</div>
 	</div>
 </section>
-<section class="flex flex-row justify-center mx-auto">
+<section class="flex flex-row justify-center mx-auto mb-32">
 	<PortfolioGrid content={data.content} />
 </section>
 
@@ -62,8 +62,6 @@
 		line-height: 1.2em;
 
 		& h1 {
-			font-size: var(--step-5);
-			font-family: 'Inter Tight', 'Inter', sans-serif;
 			line-height: 1.2em;
 		}
 	}

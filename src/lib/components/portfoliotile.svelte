@@ -22,7 +22,7 @@
         {#if piece.meta.tags}
             <div>
                 {#each piece.meta.tags as tag}
-                    <span class="tagpill text-white text-xs rounded px-2 mr-1 inline-block">
+                    <span class="tagpill text-white text-xs rounded px-2 py-0.5 mr-1 inline-block">
                         {tag}
                     </span>
                 {/each}
@@ -42,18 +42,19 @@
 		text-decoration: none;
 	}
     .tilelink {
-        flex-basis: 430px;
+        flex-basis: 337px;
         min-width: 220px;
         max-width: 700px;
         flex-grow: 1;
     }
     .tagpill {
-        background-color: var(--color-blue-400);
+        background-color: var(--color-blue-700);
     }
 	.tile {
 		transition: box-shadow 0.3s ease-in-out 0s;
         background-color: var(--color-blue-main);
         background-blend-mode: soft-light;
+        background-repeat: no-repeat;
 	}
 	.tile:hover {
 		box-shadow: 0px 0px 25px 6px var(--color-blue-400);
