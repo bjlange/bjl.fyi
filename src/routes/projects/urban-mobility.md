@@ -1,6 +1,7 @@
 ---
 title: "Urban Mobility Venture Pilot"
 date: '2018-03-14'
+description: Building data and ML-powered features and infra for a startup
 tags: [analytics, ml features, live product, geospatial, behavior change]
 cardImg: redacted_carpool_screenshot
 cardImgPosition: top

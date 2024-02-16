@@ -1,6 +1,7 @@
 ---
 title: The perfect conference
 date: '2015-01-01'
+description: Optimizing a multidisciplinary scientific conference series for greater breakthroughs
 tags: [optimization, network analysis, survey design, full stack web dev, impact measurement]
 cardImg: rcsa_hero
 ---

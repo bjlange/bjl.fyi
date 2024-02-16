@@ -10,7 +10,6 @@
 
 	// Create a reactive statement to compute meta tags.
 	$: metaTags = extend(true, {}, data.baseMetaTags, $page.data.pageMetaTags);
-
 	export let data;
 </script>
 <MetaTags {...metaTags} />
