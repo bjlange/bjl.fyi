@@ -1,6 +1,7 @@
 ---
-title: Data Games
+title: The Data Games
 date: '2017-05-01'
+description: Designing a capstone data science educational experience for CapitalOne
 tags: [experience design, data capability building, full stack web dev, facilitation]
 cardImg: 'players_handbook_cover'
 cardImgPosition: bottom
