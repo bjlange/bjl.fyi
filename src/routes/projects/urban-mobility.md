@@ -44,7 +44,7 @@ Three weeks into the six week pilot, after trying tons of different tactics, we 
 
 <Img class="w-48 sm:float-right sm:ml-16 relative top-10 z-10 left-4 sm:right-10" src={net} alt='Diagram of a small travel time network from one of the early carpool prototypes' />
 <Img class="sm:w-96 sm:float-right clear-right sm:ml-8 my-4 relative sm:-mr-16" src={poster} alt='Large posters in the pilot partners workspace with carpool buddy matches' />
-<Img class="w-72 sm:float-right clear-right sm:ml-8 left-32 sm:left-0 relative -top-32 sm:-top-16 -mb-24 sm:-mb-12 "  src={app} alt='Screenshot of the carpool buddy feature in the app' />
+<Img class="w-72 sm:float-right clear-right sm:ml-8 left-16 sm:left-0 relative -top-32 sm:-top-16 -mb-24 sm:-mb-12 "  src={app} alt='Screenshot of the carpool buddy feature in the app' />
     
 
 
