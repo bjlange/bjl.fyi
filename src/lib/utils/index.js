@@ -21,11 +21,23 @@ export const allProjectSlugs = async () => {
     const allPostFiles = import.meta.glob('/src/routes/projects/*.md');
 	const iterablePostFiles = Object.entries(allPostFiles);
 
-	const allSlugs = await Promise.all(
+    console.log(iterablePostFiles);
+    console.log(await Promise.all(
         iterablePostFiles.map(async ([path, resolver]) => {
+            const { metadata } = await resolver();
+            return metadata.externalLink === undefined;
+        })
+    ));
+	const allSlugs = await Promise.all(
+        iterablePostFiles.filter(async ([path, resolver]) => {
+
+        }).map(async ([path, resolver]) => {
+            const { metadata } = await resolver();
+            if (metadata.externalLink !== undefined) return;
             const postSlug = path.slice(21, -3);
             return postSlug;
         })
     );
-    return allSlugs
+
+    return allSlugs.filter((slug) => slug !== undefined);
 };
