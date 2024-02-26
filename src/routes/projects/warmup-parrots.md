@@ -1,6 +1,6 @@
 ---
 title: 'Warmup Parrots LLM App'
-date: '2022'
+date: '2023-06-01'
 description: I advised the team at IDEO that built this fun concept. Read more on IDEO's Duct Tape AI blog
 tags: [LLM features, advisory, prototype]
 cardImg: parrots
