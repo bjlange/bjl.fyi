@@ -17,7 +17,7 @@
 	<div class="max-w-prose flex-grow">
 		<div id="hello">Hey there! I'm</div>
 		<h1>Brian J. Lange.</h1>
-		<h2>I'm a data scientist, product person, and leader of creative problem solvers.</h2>
+		<h2>I'm a data scientist, designer, product person, and leader of creative problem solvers.</h2>
 		<p>I'm also a bike rider, Chicagoan, and enjoyer of nature, music, and good food and drink.</p>
 		<p>
 			Previously I've worked at IDEO and Datascope, building data science teams and solving problems
