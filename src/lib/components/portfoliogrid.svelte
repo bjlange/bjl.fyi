@@ -1,7 +1,7 @@
 <script>
 	import PortfolioTile from './portfoliotile.svelte';
 	export let content;
-    const n_fillers = Math.max(0, 4 - (content.length % 4));
+    const n_fillers = Math.max(0, 4 - (content.length % 4), 3- (content.length % 3));
 </script>
 
 <div class="container mx-2 sm:mx-8">
@@ -10,8 +10,8 @@
 		{#each content as piece}
 			<PortfolioTile {piece} />
 		{/each}
-		{#if n_fillers > 1}
-			<div class="filler">More being added soon...</div>
+        <div class="filler">More being added soon...</div>
+        {#if n_fillers > 1}
             {#each Array(n_fillers-1) as _}
             <div class="filler"></div>
             {/each}
