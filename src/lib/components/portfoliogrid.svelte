@@ -10,7 +10,7 @@
 		{#each content as piece}
 			<PortfolioTile {piece} />
 		{/each}
-        <div class="filler">More being added soon...</div>
+        <div class="filler">More to come...</div>
         {#if n_fillers > 1}
             {#each Array(n_fillers-1) as _}
             <div class="filler"></div>

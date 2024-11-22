@@ -19,9 +19,10 @@
 		<h1>Brian J. Lange.</h1>
 		<h2>I'm a data scientist, designer, product person, and leader of creative problem solvers.</h2>
 		<p>I'm also a bike rider, Chicagoan, and enjoyer of nature, music, and good food and drink.</p>
+		<p>Currently building AI software for the EV charging industry at <a href="https://chargemate.ai">ChargeMate</a>.</p>
 		<p>
 			Previously I've worked at IDEO and Datascope, building data science teams and solving problems
-			for clients using data, algorithms, and human-centered design.
+			for clients using data, software, and human-centered design.
 		</p>
 		<div id="iconRow" style="margin-left:-2px">
 			<a href="https://www.linkedin.com/in/brianjlange/" target="_blank" rel="noopener noreferrer">
@@ -34,14 +35,14 @@
 				<span class="sr-only">LinkedIn</span>
 				<!-- This is for screen readers -->
 			</a>
-			<a href="https://www.instagram.com/bjlange/" target="_blank" rel="noopener noreferrer">
+			<a href="https://bsky.app/profile/bjl.fyi" target="_blank" rel="noopener noreferrer">
 				<Icon
-					icon={instagramIcon}
+					icon="ri:bluesky-fill"
 					width={iconSize}
 					height={iconSize}
 					style="display: inline-block;"
 				/>
-				<span class="sr-only">Instagram</span>
+				<span class="sr-only">Bluesky</span>
 				<!-- This is for screen readers -->
 			</a>
 			<a href="https://github.com/bjlange/" target="_blank" rel="noopener noreferrer">
